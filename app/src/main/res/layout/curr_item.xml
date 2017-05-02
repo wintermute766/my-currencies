@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/value"
+        android:layout_width="@dimen/width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/padding"
+        android:textAppearance="@style/Title"
+        tools:text="00.00" />
+
+    <TextView
+        android:id="@+id/nominal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:lines="1"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding"
+        android:textAppearance="@style/Title"
+        tools:text="1" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/nominal"
+        android:layout_toLeftOf="@id/value"
+        android:layout_toRightOf="@id/nominal"
+        android:layout_toStartOf="@id/value"
+        android:lines="1"
+        android:textAppearance="@style/Title"
+        tools:text="Канадских долларов" />
+
+    <TextView
+        android:id="@+id/char_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nominal"
+        android:lines="1"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding"
+        android:textAppearance="@style/Subtitle"
+        tools:text="CAD" />
+
+    <TextView
+        android:id="@+id/num_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_toEndOf="@id/char_code"
+        android:layout_toRightOf="@id/char_code"
+        tools:text="(000)" />
+
+
+</RelativeLayout>
